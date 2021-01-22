@@ -1,0 +1,78 @@
+/* mobile first design */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Architects Daughter', cursive;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .flex-left {
+    width: 50%;
+}
+
+.flex-right {
+    width: 50%;
+} */
+
+#player-form {
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+}
+
+input[type=text], select {
+    width:100%;
+    padding: 10px 15px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+#add-player {
+    background-color: lightgreen;
+    float: right;
+    margin: 5px 0;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+/* make sure the add-player button go into the form border */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#player-list {
+    text-decoration: none;
+    list-style-type: none;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    font-size: 20px;
+}
+
+#player-list li {
+    width:100%;
+    padding: 10px 15px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+
+.remove-player {
+    background-color:lightsalmon;
+    float: right;
+    height: 25px;
+    width: 115px;
+    border-radius: 5px;
+}
