@@ -2,7 +2,6 @@ const playerList = document.querySelector("#player-list"); // grab the whole pla
 const form = document.querySelector("#player-form"); // grab the whole from from HTML
 const orderNameButton = document.querySelector("#orderNameButton"); // grab the order by first name button
 
-
 // display the player on the screen
 function displayPlayer(doc) {
     /* create all the necessary elements for the list to display on the webpage */
@@ -25,7 +24,7 @@ function displayPlayer(doc) {
     team.textContent = doc.data().team + " ";
     number.textContent = doc.data().number + ", ";
     position.textContent = doc.data().position + ", ";
-    height.textContent = doc.data().height + " ";
+    height.textContent = doc.data().height + ", ";
     weight.textContent = doc.data().weight + " lbs";
     remove.textContent = "Remove Player"; // text showing on the remove button
 
@@ -99,11 +98,11 @@ db.collection('nba').onSnapshot((snapshot) => {
     })
 })
 
-// order by first name (order button)
-orderNameButton.addEventListener('click', (event) => {
-    db.collection('nba').orderBy('fname').get().then((snapshot) => {
-        snapshot.docs.forEach((doc) => {
-            displayPlayer(doc);
-        })
-    })
-})
+// // order by first name (order button)
+// orderNameButton.addEventListener('click', (event) => {
+//     db.collection('nba').orderBy('fname').get().then((snapshot) => {
+//         snapshot.docs.forEach((doc) => {
+//             displayPlayer(doc);
+//         })
+//     })
+// })
