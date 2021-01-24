@@ -4,15 +4,13 @@ This is a simple project called "NBA Players". In this project, the users have t
 
 I love watching NBA games, so I thought that it would be a good idea if I can create a web application that allows the users to add, remove and store their favorite players' information on the Google's cloud firestore. 
 
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of the cloud database.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/yijynkr9l0E)
 
 # Cloud Database
 
 I used Google's firebase cloud firestore for this project. 
 
-In the cloud firestore, I have one collection called "nba", and inside it, I have 2 documents that have auto generated ID which both contain player's information. If the users add their favorite players through the web application, then one new document will be added to the "nba" collection automatically and inside the doucment, it will have the player's information which contains the fields and values. The users can delete the documents inside the collection as well. 
+In the cloud firestore, I have one collection called "nba", and inside it, I have 2 documents that have auto generated ID which both contain player's information. If the users add their favorite players through the web application, then one new document will be added to the "nba" collection automatically, and inside the doucment, it will have the player's information which contains the fields and values. The users can delete the documents inside the collection as well. 
 
 # Development Environment
 

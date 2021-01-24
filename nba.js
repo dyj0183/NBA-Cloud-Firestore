@@ -58,7 +58,6 @@ function displayPlayer(doc) {
 //     })
 // }) 
 
-
 // save data from user input(form) to cloud firestore
 form.addEventListener('submit', (event) => {
     event.preventDefault(); //so it will not refresh the page

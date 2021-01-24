@@ -10,14 +10,6 @@
     flex-direction: column;
 }
 
-/* .flex-left {
-    width: 50%;
-}
-
-.flex-right {
-    width: 50%;
-} */
-
 #player-form {
     border: 3px solid black;
     border-radius: 5px;
@@ -25,8 +17,9 @@
     width: 100%;
 }
 
-input[type=text], select {
-    width:100%;
+input[type=text],
+select {
+    width: 100%;
     padding: 10px 15px;
     margin: 6px 0;
     display: inline-block;
@@ -61,7 +54,7 @@ input[type=text], select {
 }
 
 #player-list li {
-    width:100%;
+    width: 100%;
     padding: 10px 15px;
     margin: 6px 0;
     display: inline-block;
@@ -70,9 +63,25 @@ input[type=text], select {
 }
 
 .remove-player {
-    background-color:lightsalmon;
+    background-color: lightsalmon;
     float: right;
     height: 25px;
     width: 115px;
     border-radius: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    #container {
+        flex-direction: row;
+    }
+    .flex-left {
+        width: 45%;
+        margin: 5px 5px;
+    }
+
+    .flex-right {
+        width: 45%;
+        margin: 5px 5px;
+    }
 }
